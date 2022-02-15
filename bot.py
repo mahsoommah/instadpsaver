@@ -8,7 +8,7 @@ import time
 from consts import *
 import re
 
-'''Coded by Anish Gowda 😃😃😃😃'''
+'''Coded by Mahsoom'''
 
 
 L = Instaloader()
@@ -29,11 +29,11 @@ logger = logging.getLogger(__name__)
 def start(update, context):
     id = update.message.chat_id
     name = update.message.from_user['username']
-    update.message.reply_html(welcome_msg())
+    update.message.reply_html(welcome_photo(),welcome_msg())
 
 
 def help_msg(update, context):
-    update.message.reply_text("Send Any instagram users username(without @) or their profile url to get their profile pricture")
+    update.message.reply_text("❣️Send Any instagram users username(without @) or their profile url to get their profile pricture❣️")
 
 
 def contact(update, context):
@@ -51,7 +51,7 @@ def username(update, context):
     query = update.message.text
 
     if not re.compile(mediaregpat).search(query):
-        msg = update.message.reply_text("Downloading...")
+        msg = update.message.reply_text("😌Getting Data..🥸")
         if re.compile(proregpat).search(query):
             query = get_username(query)
         chat_id = update.message.chat_id
@@ -61,19 +61,19 @@ def username(update, context):
             context.bot.send_photo(
                 chat_id=chat_id, photo=user.profile_pic_url,
                 caption=caption_msg, parse_mode='MarkdownV2')
-            update.message.reply_text("Can You support me by rating this bot 😃",
+            update.message.reply_text("You Have Any Doubts..😇",
                                       reply_markup=InlineKeyboardMarkup(ratingkey))
-            msg.edit_text("finished.")
+            msg.edit_text("💘")
             time.sleep(5)
         except Exception as e:
             print(format_exc())
-            msg.edit_text("Try again 😕😕 Check the username correctly")
+            msg.edit_text("Pls Give Me Correct Data...😩🤨")
     else:
         update.message.reply_html("This bot only supports downloading of Profile picture please do not send media url.")
 
 
 def source(update, context):
-    update.message.reply_text("You can get the source code of this bot here \n\n https://github.com/anishgowda21/Instagram_DP_Saver_Bot")
+    update.message.reply_text("😶‍🌫️Sorry,😍😊My Repo Private😶‍🌫️")
 
 
 def error(update, context):
