@@ -3,9 +3,9 @@ from telegram.utils.helpers import escape_markdown as es
 
 
 def welcome_msg():
-     welcome_msg = '''💖Welcome To Instagram Dp Saver Bot💖
- 😋Send me anyones instagram username or profile url to get their DP😝
- ex : mahsoom.mjm.18 etc'''
+    welcome_msg = '''<b>Hello & Welcome</b>💝😊
+ <i>Send me anyones instagram username or profile url to get their DP</i>
+ ex : <b>mahsoom.mjm.18</b> , <b>lovedoll</b> etc'''
 
     return welcome_msg
 
