@@ -8,7 +8,7 @@ def welcome_msg():
  😋Send me anyones instagram username or profile url to get their DP😝
  ex : mahsoom.mjm.18 etc'''
 
-    return welcome_msg,welcome_photo
+    return welcome_msg
 
 
 def acc_type(val):
