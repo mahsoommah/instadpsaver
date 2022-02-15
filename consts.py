@@ -4,9 +4,9 @@ from telegram.utils.helpers import escape_markdown as es
 
 def welcome_msg():
     welcome_photo = '''https://telegra.ph/file/1ab200205580a4444561b.jpg'''
-    welcome_msg = '''<b>💖Welcome To Instagram Dp Saver Bot💖</b>🖐🖐
- <i>😋Send me anyones instagram username or profile url to get their DP😝</i>
- ex : <b>mahsoom.mjm.18</b> etc'''
+    welcome_msg = '''💖<b>Welcome To Instagram Dp Saver Bot</b>💖
+ 😋<i>Send me anyones instagram username or profile url to get their DP</i>😝
+ ex : mahsoom.mjm.18 etc'''
 
     return welcome_msg,welcome_photo
 
