@@ -3,8 +3,7 @@ from telegram.utils.helpers import escape_markdown as es
 
 
 def welcome_msg():
-     welcome_msg = '''[MAHSOOM] {https://telegra.ph/file/1ab200205580a4444561b.jpg}
-    💖Welcome To Instagram Dp Saver Bot💖
+     welcome_msg = '''💖Welcome To Instagram Dp Saver Bot💖
  😋Send me anyones instagram username or profile url to get their DP😝
  ex : mahsoom.mjm.18 etc'''
 
